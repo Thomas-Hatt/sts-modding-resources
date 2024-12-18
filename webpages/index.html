@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slay the Spire Modding Resources</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+  </style>
+</head>
+
+<body class="bg-dark text-white">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-4">
+    <div class="container">
+      <a class="navbar-brand fs-4" href="#">StS Modding</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h1 class="display-1 fw-bold mb-5">Slay the Spire <br> <span class="text-warning">Modding Resources</span></h1>
+        <p class="lead mb-5">Your ultimate resource for modding Slay the Spire. Explore <span
+            style="text-decoration: underline;">potions</span>, <span style="text-decoration: underline;">relics</span>,
+          <span style="text-decoration: underline;">cards</span>, and
+          more!
+        </p>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Sample code to be used later
+
+
+  <div class="container mt-5">
+    <h2 class="mb-4">Code Generator</h2>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="html-tab" data-bs-toggle="tab" data-bs-target="#html" type="button"
+          role="tab" aria-controls="html" aria-selected="true">HTML</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="css-tab" data-bs-toggle="tab" data-bs-target="#css" type="button" role="tab"
+          aria-controls="css" aria-selected="false">CSS</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="js-tab" data-bs-toggle="tab" data-bs-target="#js" type="button" role="tab"
+          aria-controls="js" aria-selected="false">JavaScript</button>
+      </li>
+    </ul>
+
+    <div class="tab-content mt-3" id="myTabContent">
+      <div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="html-tab">
+        <button class="btn btn-primary mb-3" onclick="generateCode('html')">Generate HTML</button>
+        <pre><code class="language-html" id="htmlCode"></code></pre>
+      </div>
+      <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
+        <button class="btn btn-primary mb-3" onclick="generateCode('css')">Generate CSS</button>
+        <pre><code class="language-css" id="cssCode"></code></pre>
+      </div>
+      <div class="tab-pane fade" id="js" role="tabpanel" aria-labelledby="js-tab">
+        <button class="btn btn-primary mb-3" onclick="generateCode('js')">Generate JavaScript</button>
+        <pre><code class="language-javascript" id="jsCode"></code></pre>
+      </div>
+    </div>
+
+    <button class="btn btn-secondary mt-3" onclick="copyToClipboard()">Copy to Clipboard</button>
+  </div>
+
+
+  <script src="../js/bootstrap.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+  <script>
+    function generateCode(type) {
+      let code = '';
+      switch (type) {
+        case 'html':
+          code = '<div class="example">\n  <h1>Hello, World!</h1>\n  <p>This is a sample HTML code.</p>\n</div>';
+          break;
+        case 'css':
+          code = '.example {\n  background-color: #f0f0f0;\n  padding: 20px;\n  border-radius: 5px;\n}';
+          break;
+        case 'js':
+          code = 'function greet(name) {\n  console.log(`Hello, ${name}!`);\n}\n\ngreet("World");';
+          break;
+      }
+      document.getElementById(type + 'Code').textContent = code;
+      Prism.highlightElement(document.getElementById(type + 'Code'));
+    }
+
+    function copyToClipboard() {
+      const activeTab = document.querySelector('.tab-pane.active');
+      const codeElement = activeTab.querySelector('code');
+      const textArea = document.createElement('textarea');
+      textArea.value = codeElement.textContent;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      alert('Code copied to clipboard!');
+    }
+  </script>
+
+  -->
+
+  <footer class="text-white text-center py-3 mt-5">
+    <p class="mb-0">Designed by Thomas Hatt</p>
+  </footer>
+</body>
+
+</html>
