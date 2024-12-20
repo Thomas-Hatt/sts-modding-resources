@@ -1,6 +1,9 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .navbar-nav .nav-link {
@@ -18,4 +21,14 @@ body {
 
 .lead {
   font-weight: 400;
+}
+
+.footer {
+  background-color: #272727;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.content {
+  flex: 1;
 }
